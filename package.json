@@ -1,0 +1,16 @@
+{
+  "name": "gulp-the-good-parts",
+  "description": "gulp: The good parts",
+  "author": "Yoshihide Jimbo",
+  "devDependencies": {
+    "babel-core": "^6.5.1",
+    "babel-preset-es2015": "^6.5.0",
+    "del": "^2.2.0",
+    "gulp": "^3.9.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-load-plugins": "^1.2.0",
+    "gulp-size": "^2.0.0",
+    "gulp-watch": "^4.3.5",
+    "run-sequence": "^1.1.5"
+  }
+}
