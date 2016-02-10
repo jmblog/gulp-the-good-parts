@@ -1,0 +1,15 @@
+{
+  "clean": {
+    "src": [ ".tmp/*", "dist/*" ]
+  },
+  "styles": {
+    "src": ["src/styles/**/!(_)*.{sass.scss}"],
+    "dest": "dist/styles"
+  },
+  "options": {
+    "sass": {
+      "includePaths": [ "node_modules/" ],
+      "outputStyle": "compressed"
+    }
+  }
+}
