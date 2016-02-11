@@ -1,0 +1,29 @@
+// Settings: Global variables, config swithces
+// --------------------------------------------------
+@import "settings/**/*.scss";
+
+// Tools: Default mixins and functions
+// --------------------------------------------------
+@import "tools/**/*.scss";
+
+// Generic: Ground-zero styles (normalize, reset, box-sizing)
+// --------------------------------------------------
+@import "generic/normalize";
+@import "generic/box-sizing";
+@import "generic/reset";
+
+// Base: Unclassed HTML elements (type selectors)
+// --------------------------------------------------
+@import "base/**/*.scss";
+
+// Objects: Cosmetic-free design patterns
+// --------------------------------------------------
+@import "objects/**/*.scss";
+
+// Components: Desinged components, chunks of UI
+// --------------------------------------------------
+@import "components/**/*.scss";
+
+// Trumps: Helpers and overrides
+// --------------------------------------------------
+@import "trumps/**/*.scss";
