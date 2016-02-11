@@ -1,5 +1,4 @@
 var gulp = require('gulp');
-var gutil = require('gulp-util');
 var watch = require('gulp-watch');
 var size = require('gulp-size');
 
@@ -10,7 +9,7 @@ function build() {
 
 gulp.task('build', build);
 
+// Try to add, edit or delete files in `src` directory.
 gulp.task('default', function () {
-  gutil.log(gutil.colors.black.bgYellow(' Try to add, edit or delete files in `watch-files/src` directory. '))
   watch('src/**/*', build);
 });
