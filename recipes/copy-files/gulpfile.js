@@ -6,6 +6,6 @@ function copy() {
     .pipe(gulp.dest('backup'));
 }
 
-copy.description = 'Copy files to other directories.'
+copy.description = 'Copy files to multiple directories.'
 
 gulp.task('default', copy);
