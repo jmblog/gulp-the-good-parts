@@ -19,15 +19,15 @@ $ cd gulp-the-good-parts
 $ npm install
 ```
 
-### 3. Choose one of the recipes
+### 3. Choose a recipe and run gulp
 
 ```bash
-$ cd recipes/
-$ cd gulp-with-es2015/
+$ cd recipes/copy-files
+$ gulp
 ```
 
-### 4. Run gulp
+or
 
 ```bash
-$ gulp
+$ gulp --cwd recipes/copy-files
 ```
