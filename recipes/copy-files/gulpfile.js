@@ -1,8 +1,10 @@
 var gulp = require('gulp');
 
-gulp.task('copy', function() {
+function copy() {
   return gulp.src('src/**/*')
     .pipe(gulp.dest('dist'));
-});
+}
 
-gulp.task('default', ['copy']);
+copy.description = 'Copy files to another directory.'
+
+gulp.task('default', copy);
