@@ -1,5 +1,4 @@
 var gulp = require('gulp');
-var watch = require('gulp-watch');
 var loadPlugins = require('gulp-load-plugins');
 var devtools = require('postcss-devtools');
 var autoprefixer = require('autoprefixer');
@@ -7,16 +6,16 @@ var csswring = require('csswring');
 
 var $ = loadPlugins();
 
+// (1) Pass only files which are not Sass partial files.
+// (2) Prevent pipe breaking when complie error happens with gulp-plumber.
+// (3) Show error messages on desktop notification with gulp-notify.
+// (4) Glob imports like sass-rails with gulp-glob-sass.
 function styles() {
   var sassOptions = {
      includePaths: [
        'node_modules/bootstrap-sass/assets/stylesheets'
      ]
    };
-   // (1) Pass only files which are not Sass partial files.
-   // (2) Prevent pipe breaking when complie error happens
-   // (3) Show error messages on desktop notification.
-   // (4) Glob imports like sass-rails
   return gulp.src('src/**/!(_)*.{scss,sass}')  // (1)
     .pipe($.plumber({
       errorHandler: $.notify.onError('<%= error.message %>') // (3)
@@ -34,8 +33,8 @@ function styles() {
 
 gulp.task('styles', styles);
 
-gulp.task('styles:watch', ['styles'], function () {
-  watch('src/**/*.{scss,sass,css}', styles); // Watch all files
+gulp.task('styles:watch', function () {
+  $.watch('src/**/*.{scss,sass,css}', styles); // Watch all files (included Sass partials).
 });
 
-gulp.task('default', ['styles:watch']);
+gulp.task('default', ['styles']);
