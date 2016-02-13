@@ -2,6 +2,9 @@
   "name": "gulp-the-good-parts",
   "description": "gulp: The good parts",
   "author": "Yoshihide Jimbo",
+  "scripts": {
+    "postinstall": "cd recipes/gulp-4.0 && npm install"
+  },
   "devDependencies": {
     "autoprefixer": "^6.3.2",
     "babel-core": "^6.5.1",
