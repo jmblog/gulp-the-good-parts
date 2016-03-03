@@ -1,5 +1,7 @@
 # gulp: The Good Parts
 
+Best practices for gulp (both v3 and v4).
+
 ## Getting Started
 
 ### 1. Install gulp-cli globally
@@ -36,5 +38,5 @@ $ gulp
 or
 
 ```bash
-$ gulp --cwd gulp-4.0/watch-files
+$ gulp --gulpfile gulp-4.0/watch-files/gulpfile.js
 ```
