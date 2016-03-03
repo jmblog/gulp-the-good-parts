@@ -1,4 +1,4 @@
-# gulp.js: The Good Parts
+# gulp: The Good Parts
 
 ## Getting Started
 
@@ -16,18 +16,25 @@ $ npm install -g gulp-cli
 ```bash
 $ git clone git@github.com:jmblog/gulp-the-good-parts.git
 $ cd gulp-the-good-parts
+
+# Install packages for gulp 3.9
+$ cd gulp-3.9
+$ npm install
+
+# Install packages for gulp 4.0
+$ cd gulp-4.0
 $ npm install
 ```
 
 ### 3. Choose a recipe and run gulp
 
 ```bash
-$ cd recipes/copy-files
+$ cd gulp-4.0/watch-files
 $ gulp
 ```
 
 or
 
 ```bash
-$ gulp --cwd recipes/copy-files
+$ gulp --cwd gulp-4.0/watch-files
 ```
