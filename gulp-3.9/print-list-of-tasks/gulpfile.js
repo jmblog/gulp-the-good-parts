@@ -5,19 +5,19 @@ var runSequence = require('run-sequence');
 function clean() {
   return del('dist');
 }
-clean.description = 'Clean up generated files.'
+clean.description = 'Cleans up generated files.'
 
 function styles(done) {
   console.log('task styles');
   done();
 }
-styles.description = 'Compile Sass to CSS.'
+styles.description = 'Generates CSS files.'
 
 function scripts(done) {
   console.log('task scripts');
   done();
 }
-scripts.description = 'Generate JS files.'
+scripts.description = 'Generates JS files.'
 
 function build(done) {
   console.log('task build');
