@@ -1,6 +1,6 @@
 # gulp: The Good Parts
 
-Best practices for gulp (both v3 and v4).
+gulp best practices (both v3 and v4).
 
 ## Getting Started
 
