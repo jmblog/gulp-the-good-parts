@@ -2,6 +2,8 @@
 
 gulp best practices (both v3 and v4).
 
+[Slides](https://speakerdeck.com/jmblog/gulp-the-good-parts)
+
 ## Getting Started
 
 ### 1. Install gulp-cli globally
