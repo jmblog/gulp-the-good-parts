@@ -1,8 +1,6 @@
 # gulp: The Good Parts
 
-gulp best practices (both v3 and v4).
-
-[Slides](https://speakerdeck.com/jmblog/gulp-the-good-parts)
+gulp best practices (both v3 and v4). ([Slides](https://speakerdeck.com/jmblog/gulp-the-good-parts))
 
 ## Getting Started
 
